@@ -4,7 +4,7 @@ body {
 
 header {
     background-color: #BBBBBB;
-    padding: 20px 5%;
+    padding: 20px 0;
 }
 
 .caixa {
@@ -93,10 +93,6 @@ footer {
     color: white;
     font-size: 13px;
     margin-top: 20px;
-}
- 
-main {
-
 }
 
 form { margin: 40px 0;
@@ -220,7 +216,7 @@ table:hover {
 }
 
 .lista-beneficios {
-    width: 40%;
+    width: 50%;
     display: inline-block;
     vertical-align: top;
 }
@@ -237,9 +233,15 @@ table:hover {
     content: "★";
 }
 .imagem-beneficios {
-    width:  60%;
+    width:  50%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
 }
 
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
 .principal em {
     font-style: italic;
 } 
@@ -247,4 +249,63 @@ table:hover {
 .video {
     width: 560px;
     margin: 2em auto;
+}
+
+@media screen and (max-width:480px) {
+    /* HOME */
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+    /* PRODUTOS */
+    .produtos {
+        display: grid;
+        padding: 0 2.5em;
+        margin: 1em 0 1em 0;
+    }
+    .produtos li {
+        margin: 0.5em 0;
+    }
+    /* CONTATO */
+    .questionario{
+        text-align: center;
+    }
+    .input-padrao {
+        display: inline;
+        width: auto;
+        margin: 10px 0 15px 0;
+    }
+    .opcao-contato label{
+        text-align: justify;
+        margin: 0 0 0 7em;
+        padding: 0 0 1em 0;
+    }
+    .opcao-contato legend {
+        text-align: center;
+    }
+    .horario-atendimento legend {
+        padding:  1em 0 1em 0;
+    }
+    .horario-atendimento select {
+        font-size: 20px;
+    }
+    .checkbox {
+        padding: 1em 0 1em 0;
+        font-size: 20px;
+    }
+    .enviar {
+        width: auto;
+        padding: 1em 50px;
+    }
+    .tabela-horario {
+        margin: 3em auto;
+    }
 }

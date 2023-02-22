@@ -26,9 +26,9 @@
     </header>
 
     <main>
-        <form class="">
+        <form class="questionario">
             <label for="nomesobrenome">Nome</label>
-            <input type="text" id="nomesobrenome" class="input-padrao" required>
+            <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="seu nome e sobrenome">
 
             <label for="email">E-mail</label>
             <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
@@ -37,22 +37,22 @@
             <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
             <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" cols="30" rows="10" class="input-padrao" required placeholder="Escreva aqui sua mensagem"></textarea>
+            <textarea id="mensagem" cols="20" rows="10" class="input-padrao" required placeholder="Escreva aqui sua mensagem"></textarea>
 
 
-            <fieldset>
+            <fieldset class="opcao-contato">
             <legend>Como prefere nosso contato? </legend>
-            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> E-mail</label>
+            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" class="radio-opcao-contato"> E-mail</label>
             
 
-            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone" class="radio-opcao-contato"> Telefone</label>
             
 
             <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
             
         </fieldset>
 
-        <fieldset>
+        <fieldset class="horario-atendimento">
             <legend>Qual horário prefere ser atendido?</legend>
             <select name="" id="">
                 <option value="">Manhã</option>
@@ -65,7 +65,7 @@
             <input type="submit" value="Enviar formulário" class="enviar">
         </form>
 
-        <table>
+        <table class="tabela-horario">
             <thead>
                 <tr>
                     <th>Dia</th>
